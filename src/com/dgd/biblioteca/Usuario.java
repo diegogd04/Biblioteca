@@ -5,7 +5,7 @@ public class Usuario {
     private String dni;
     private String nombre;
     private String apellidos;
-    private Integer telefono;
+    private String telefono;
     private String direccion;
     private String poblacion;
 
@@ -27,10 +27,10 @@ public class Usuario {
     public void setApellidos(String apellidos){
         this.apellidos = apellidos;
     }
-    public Integer getTelefono(){
+    public String getTelefono(){
         return telefono;
     }
-    public void setTelefono(Integer telefono){
+    public void setTelefono(String telefono){
         this.telefono= telefono;
     }
     public String getDireccion(){

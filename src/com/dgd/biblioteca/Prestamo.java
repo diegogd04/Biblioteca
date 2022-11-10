@@ -3,28 +3,16 @@ package com.dgd.biblioteca;
 public class Prestamo {
 
     private Integer id;
-    private String libro;
-    private String usuario;
     private String fechaPrestamo;
     private String fechaDevolucion;
+    private Libro libro;
+    private Usuario usuario;
 
-    public Integer setId(){
+    public Integer getId(){
         return id;
     }
-    public void getId(Integer id){
+    public void setId(Integer id){
         this.id = id;
-    }
-    public String getLibro(){
-        return libro;
-    }
-    public void getLibro(String libro){
-        this.libro = libro;
-    }
-    public String getUsuario(){
-        return usuario;
-    }
-    public void getUsuario(String usuario){
-        this.usuario = usuario;
     }
     public String getFechaPrestamo(){
         return fechaPrestamo;
@@ -37,5 +25,17 @@ public class Prestamo {
     }
     public void setFechaDevolucion(String fechaDevolucion){
         this.fechaDevolucion = fechaDevolucion;
+    }
+    public Libro getLibro(){
+        return libro;
+    }
+    public void setLibro(Libro libro){
+        this.libro = libro;
+    }
+    public Usuario getUsuario(){
+        return usuario;
+    }
+    public void setUsuario(Usuario usuario){
+        this.usuario = usuario;
     }
 }

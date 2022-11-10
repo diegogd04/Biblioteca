@@ -2,16 +2,16 @@ package com.dgd.biblioteca;
 
 public class Libro {
 
-    private Integer isbn;
+    private String isbn;
     private String titulo;
-    private String autor;
-    private String genero;
     private String fechaPublicacion;
+    private Autor autor;
+    private Genero genero;
 
-    public Integer getIsbn(){
+    public String getIsbn(){
         return isbn;
     }
-    public void setIsbn(Integer isbn){
+    public void setIsbn(String isbn){
         this.isbn = isbn;
     }
     public String gettitulo(){
@@ -20,22 +20,22 @@ public class Libro {
     public void setTitulo(String titulo){
         this.titulo = titulo;
     }
-    public String getAutor(){
-        return autor;
-    }
-    public void setAutor(String autor){
-        this.autor = autor;
-    }
-    public String getGenero(){
-        return genero;
-    }
-    public void setGenero(String genero){
-        this.genero = genero;
-    }
     public String getFechaPublicacion(){
         return fechaPublicacion;
     }
     public void setFechaPublicacion(String fechaPublicacion){
         this.fechaPublicacion = fechaPublicacion;
+    }
+    public Autor getAutor(){
+        return autor;
+    }
+    public void setAutor(Autor autor){
+        this.autor = autor;
+    }
+    public Genero getGenero(){
+        return genero;
+    }
+    public void setGenero(Genero genero){
+        this.genero = genero;
     }
 }
